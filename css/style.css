@@ -1,0 +1,143 @@
+/* Efek animasi untuk love */
+.text-center {
+    margin-top: 5px;
+    font-size: 10px;
+    color: #323030;
+    position: relative;
+}
+
+.text-center::after {
+    content: '❤️'; 
+    font-size: 10px;
+    position: absolute;
+   left : 260px;  
+    animation: heartbeat 1.5s infinite; 
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*bagian body*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(215, 224, 250);
+}
+
+/*bagian container*/
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2); 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.container h2 {
+    color: #08165d; 
+    margin-bottom: 15px;
+}
+
+/*bagian tampilkan*/
+h3 {   
+    color: black;
+    margin: 10px 0;
+    padding: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px;
+    background-color: #c3cdd3de;
+    font-size: 16px;
+}
+
+/*input style*/
+input {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    width: 96%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/*button style*/
+button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    border-radius: 50px;
+    border: none;
+}
+/*Nama,kategori,harga,diskon*/
+.form-group {
+    margin-bottom: 15px;
+}
+
+label{
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 5px;
+}
+/*warna button*/
+.biru {
+    background-color: cornflowerblue;
+    color: white;
+    cursor: pointer;
+}
+
+.mint {
+    background-color: mediumaquamarine;
+    color: white;
+    cursor: pointer;
+}
+
+.laut {
+    background-color: steelblue;
+    color: white;
+    cursor: pointer;
+}
+
+/*copyright*/
+.text-center {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+    position: relative;
+}
+
+.text-center::after {
+    content: '❤️'; /* Menambahkan simbol hati */
+    font-size: 20px;
+    position: absolute;
+    right: -49px;  /* Menggeser ikon hati ke sebelah kanan */
+    animation: heartbeat 1.5s infinite; /* Menambahkan animasi heartbeat */
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
